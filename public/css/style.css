@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'VAGRounded';
+  src: url('../fonts/vagrlsb_.woff2') format('woff2'),
+       url('../fonts/vagrlsb_.woff') format('woff'),
+       url('../fonts/vagrlsb_.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'VAGRoundedBold';
+  src: url('../fonts/vagroundedblacksskbold.woff2') format('woff2'),
+       url('../fonts/vagroundedblacksskbold.woff') format('woff'),
+       url('../fonts/vagroundedblacksskbold.ttf') format('truetype');
+}
+
+html, body{
+	text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+	height:100%;
+	background-color:#FFF;
+	color: #000;
+	font-family: 'VAGRounded', sans-serif;
+}
+
+#header .logo{
+	margin:24px;
+	width:300px;
+}
+
+@media screen and (max-width: 350px) {
+	#header .logo {
+		 margin-left:0px;
+	}
+}
+#header h1 {
+	position: relative;
+	top:10px;
+}
+
+#header .filters{
+	margin-top:20px;
+	 letter-spacing: 1px;
+	 font-size:18px;
+	 text-transform: uppercase;
+}
+
+	#header .filters ul{
+		font-family: 'VAGRoundedBold', sans-serif;
+		list-style-type: none;
+		  
+	}
+
+	#header .filters ul li:hover{
+		cursor: pointer;
+	}
+
+	#header .filters ul li.active{
+		text-decoration: underline;
+
+	}
+
+
+
+		#header .filters ul li:before {
+		  content: '-';
+		  position: absolute;
+		  margin-left: -20px;
+		  color:#FFD700;
+		  font-size:18px;
+		   font-weight: bold;
+
+		}
+
+
+
+#mapContainer{
+	overflow:hidden;
+	height:75%;
+}
+
+#map {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+	z-index: 1;
+}
+
+.message-window {
+    width:40%;
+    z-index:2;
+    position:absolute;
+    left:100%;
+    background:#fff;
+	height: 100%;
+    color:#000;
+	padding:15px;
+
+}
+@media only screen and (max-width: 800px) {
+	.message-window {
+		 width:100%;
+	}
+}
+.message-window h3{
+	margin-top:0;
+}
+
+.message-window .locationPhoto{
+	width:100%;
+
+}
+
+
+.message-window-close{
+	text-decoration: underline;
+	text-align:right;
+}
+
+#footer{
+	padding:10px;
+	font-size:14px;
+	letter-spacing: 1px;
+	text-align:justify;
+}
+
+#footer a{
+	text-decoration: underline;
+	color:#000;
+}
+
+#footer .underline{
+ color: #FFF200;           
+}
+
+#footer .underline span{
+ color: #000;           
+}
+
+#footer .contact .contactLink{
+	font-family: 'VAGRoundedBold', sans-serif;
+	text-decoration: none;
+	color:#000;
+}
+
+#footer .footerSmall{
+	font-size:12px;
+}

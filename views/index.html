@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Campus Amsterdam</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container-fluid" style="height:100%;">
+	<div id="header" class="row">
+		<div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+		<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4"><img src="img/logo_acin.png" class="logo"/></div>
+		<div class="col-xs-12 col-sm-5 filters" >
+			<ul class="filterList">
+				<li class="filterInnoDist" id="Innovation District">Innovation districts</li>
+				<li class="filterCampuses" id="Campus">Campuses</li>
+				<li class="filterFieldLabs" id="Living / Fieldlab">Living / Fieldlabs</li>
+				<!--<li class="filterAll" id="all">Show all</li>-->
+			</ul>
+		</div>
+		
+	</div>
+	<div id="mapContainer" class="row">
+		<div class="col-xs-12" style="height:100%;">
+			<div id="map"></div>
+			<div class="message-window container">
+				<div class="message-window-header row">
+					<div class="message-window-title col-xs-8"></div>
+					<div class="message-window-close col-xs-4">Close window</div>
+				</div>
+				<div class="message-window-content row">
+					<div class="col-xs-12">
+						<p>	Primary focus: <span class="primFocusText"></span></p>
+						<p>	
+						Type: <span class="typeText"></span></br>
+						Key partners: <span class="keyPartnersText"></span>
+						</p>
+						<p>
+						<span class="contactText"></span></br>
+						<span class="websiteText"></span>
+						</p>
+						<div class="imgContainer"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="row">
+		<div class="col-xs-0 col-md-2 col-lg-3"></div>
+		<div class="col-xs-12 col-md-8 col-lg-6">
+
+		
+		<p class="contact">
+			This map gives an overview of Amsterdam's leading Innovation Districts, Campuses and Living / Fieldlabs. <br/>More information? Not on the map? Please contact us at <a target="_blank" class="contactLink" href="mailto:matthijs@amsterdamcreativeindustries.com">matthijs@amsterdamcreativeindustries.com</a>. This map is developed by the <a target="_blank" class="underline" href="http://www.hva.nl"><span>Amsterdam University of Applied Sciences</span></a> and is an initiative of <a target="_blank" class="underline" href="http://www.knowledgemile.amsterdam"><span>Knowledge Mile</span></a> and <a target="_blank" class="underline" href="http://www.marineterrein.nl"><span>Marineterrein Amsterdam</span></a>.
+		</p>
+		<p class="footerSmall">
+			Idea: Geleyn Meijer. Concept development: Matthijs ten Berge and Ruurd Priester. Technical realisation: Maarten Groen (<a class="underline" href="http://www.citizendatalab.org"><span>Citizen Data Lab</span></a>).
+		</p>
+
+		</div>
+	</div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
+
